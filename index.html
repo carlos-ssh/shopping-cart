@@ -3,9 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.png" style="width: 140px; height: 100px;" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Best Solutions For your Bussines</h2>
+                                <p>Get a Coupon for $15</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="Are you looking for something special?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>more than 20,000 customers satisfied  <br>
+                        Explore the most recently items</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Contact our Experts <br>
+                        Know more about the solutions that we have for you</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Lifetime Waranty <br>
+                        Know How!</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">TRENDING ITEMS</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4> Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                        <p>PC Gamer Telios IX</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$7200  <span class="u-pull-right ">$7000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso2.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4> Is a high-performance computer created to maximize the gaming experience regardless of the type of game, virtual reality environments, streaming and video editing for professional YouTube or Twitch channels.</h4>
+                            <p>Gamer Stelios 80z X PC</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$6800  <span class="u-pull-right ">$6600</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Add to Cart</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4> Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                            <p>PC Gamer Helios 2080i X</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$7200  <span class="u-pull-right ">$6999</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso4.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>A high-performance computer created to maximize the gaming experience regardless of the type of game, virtual reality environments, streaming and video editing for professional YouTube or Twitch channels.</h4>
+                        <p>PC Gamer Stelios 80z X</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$5200  <span class="u-pull-right ">$4999</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Add to Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso5.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                            <p>PC Gamer Telios IX</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$4200  <span class="u-pull-right ">$3999</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4> Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                        <p>PC Gamer Telios IX</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$7200  <span class="u-pull-right ">$7000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Add to Cart</a>
+                    </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso2.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4> Is a high-performance computer created to maximize the gaming experience regardless of the type of game, virtual reality environments, streaming and video editing for professional YouTube or Twitch channels.</h4>
+                            <p>Gamer Stelios 80z X PC</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$6800  <span class="u-pull-right ">$6600</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Add to Cart</a>
+                        </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso3.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4> Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                            <p>PC Gamer Helios 2080i X</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$7200  <span class="u-pull-right ">$6999</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso4.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>A high-performance computer created to maximize the gaming experience regardless of the type of game, virtual reality environments, streaming and video editing for professional YouTube or Twitch channels.</h4>
+                        <p>PC Gamer Stelios 80z X</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$5200  <span class="u-pull-right ">$4999</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Add to Cart</a>
+                    </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/curso5.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                            <p>PC Gamer Telios IX</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$4200  <span class="u-pull-right ">$3999</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Add to Cart</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso1.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4> Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                                <p>PC Gamer Telios IX</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$7200  <span class="u-pull-right ">$7000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Add to Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/curso1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4> Is the pinnacle of high-performance computing focused on entertainment, work, and digital content creation. Whether playing in 4K, virtual reality or with multiple monitors; This PC has endless energy. It's immortal.</h4>
+                        <p>PC Gamer Telios IX</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$7200  <span class="u-pull-right ">$7000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Add to Cart</a>
+                    </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Bussines Plan</a>
+                                <a class="enlace" href="#">Become a Colaborator</a>
+                                <a class="enlace" href="#">Work with US</a>
+                                <a class="enlace" href="#">Support</a>
+                                <a class="enlace" href="#">Terms & Conditions</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">How we are?</a>
+                                <a class="enlace" href="#">Devolution Terms</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
 </body>
 </html>
