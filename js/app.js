@@ -96,6 +96,9 @@ function vaciarCarrito(){
         listaCursos.removeChild(listaCursos.firstChild);
     }
 
+    //Vaciar Local Storage
+    vaciarLocalStorage();
+    
     return false;
 }
 
@@ -148,17 +151,25 @@ function leerLocalStorage(){
     });
 }
 
-//THIS DELETE THE ITEM IN LOCAL STORAGE
+//THIS DELETE THE ITEM BY ID ON LOCAL STORAGE
 
 function eliminarCursoLocalStorage(curso) {
     let cursosLS;
-
+    //here we obtain the cursos array
     cursosLS = obtenerCursosLocalStorage();
 
-    cursosLS.forEach(function(cursoLs, index){
-        if(curso.id === curso) {
+    cursosLS.forEach(function(cursoLS, index){
+        if(cursoLS.id === curso) {
             cursosLS.splice(index, 1);
         }
     });
+
+    //Added the actual array to Storage
     localStorage.setItem('cursos', JSON.stringify(cursosLS) );
+}
+
+//Delete all items from local storage
+
+function vaciarLocalStorage(){
+    localStorage.clear();
 }
