@@ -11,7 +11,11 @@ h4 {
 }
 header {
     padding: 20px 0 0 0;
-    background: white;
+    background: #741d51; /* Old browsers */
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
     text-align: center;
 }
 @media (min-width: 750px) {
@@ -42,6 +46,7 @@ ul {
 }
 .submenu {
     position: relative;
+    top: 40px;
 }
 
 .submenu #carrito{
@@ -171,7 +176,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', end
 
 .footer {
     margin-top: 40px;
-    border-top:1px solid #aaa;;
+    background: #741d51; /* Old browsers */
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
     padding-top: 40px;   
 }
 .footer .menu a{
